@@ -1,0 +1,27 @@
+Este código é uma aplicação Tkinter para o controle de fluxo de almoxarifado, focada no registro e controle de equipamentos. A aplicação utiliza um banco de dados SQL Server para armazenar e gerenciar registros de equipamentos retirados e devolvidos. Aqui está um resumo de suas funcionalidades principais:
+
+1. **Interface Gráfica com Tkinter**:
+   - A aplicação cria uma interface gráfica usando Tkinter com campos de entrada para o nome da pessoa e equipamentos.
+   - Inclui botões para adicionar/remover campos de entrada, salvar registros, exportar dados para Excel, e alternar o status dos registros.
+
+2. **Conexão com o Banco de Dados SQL Server**:
+   - Conecta-se a um banco de dados SQL Server usando o módulo `pyodbc`.
+   - Insere registros de equipamentos retirados no banco de dados e permite a exclusão e alteração de registros.
+
+3. **Operações de Banco de Dados**:
+   - **Salvar Registros**: Adiciona novos registros ao banco de dados.
+   - **Excluir Registros**: Remove registros específicos do banco de dados.
+   - **Alternar Status**: Altera o status de um registro entre 'Pendente' e 'Devolvido'.
+   - **Carregar Registros**: Carrega registros existentes do banco de dados e os exibe na interface.
+   
+4. **Exportação para Excel**:
+   - Exporta os registros para um arquivo Excel usando a biblioteca `pandas`.
+
+5. **Estilos e Layout**:
+   - Utiliza cores específicas e layouts organizados em frames para uma melhor experiência do usuário.
+
+6. **Componentes Adicionais**:
+   - Scrollbar para navegação em uma lista de registros.
+   - Funcionalidades de rolagem e configuração para melhor interação do usuário com a interface gráfica.
+
+O código é bem estruturado e modular, facilitando a adição de novas funcionalidades ou a manutenção futura.
