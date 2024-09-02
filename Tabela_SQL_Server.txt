@@ -1,0 +1,10 @@
+Estrutura da tabela necessária para o banco funcionar.
+
+CREATE TABLE regristos (
+    id INT IDENTITY(1,1) PRIMARY KEY,           -- Coluna de ID com incremento automático
+    nome_equipamento VARCHAR(300) NOT NULL,     -- Nome do equipamento
+    retidara DATETIME NOT NULL,                 -- Data e hora de retirada
+    devolucao DATETIME NULL,                    -- Data e hora de devolução (pode ser NULL)
+    statu VARCHAR(50) NOT NULL,                 -- Status do registro (ex.: 'Pendente' ou 'Devolvido')
+    nome_pessoa VARCHAR(100) NOT NULL           -- Nome da pessoa associada ao registro
+);
